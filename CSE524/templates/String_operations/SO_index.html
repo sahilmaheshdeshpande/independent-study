@@ -1,0 +1,50 @@
+<!Doctype html>
+<head>
+<!-- <link rel="stylesheet" type="text/css" href="../style.css"> -->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}" />
+<style>
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:200px;   /* Height of the footer */
+}
+
+#results {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:75px;
+   font-weight: bold;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<h1>Questions on Strings </h1>
+<code >
+  <div class="quiz-container">
+    <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code notranslate" id="quiz">
+
+    </div>
+</div>
+  </div>
+</code>
+<div id ="footer" >
+  <button id="home" onclick="location.href = '/main'">Home</button>
+  <button id="repeat"value="Refresh Page" onClick="window.location.reload()">Practice Again</button>
+  <button id="previous">Previous Question</button>
+  <button id="next">Next Question</button>
+  <button id="submit">Submit Quiz</button>
+</div>
+<div id="results"></div>
+<script type="text/javascript" src="/static/js/SO_quiz.js"></script>
+
+</body>
+
+</html>

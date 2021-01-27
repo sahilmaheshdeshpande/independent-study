@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+  font-weight: 300;
+  text-align: center;
+  background-color: #f8f6f0;
+}
+.block {
+  display: block;
+  width: 75%;
+  border: none;
+  background-color: #279;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+h2{
+  text-align: center;
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #444;
+  color: #fff;
+}
+
+.block:hover {
+      background-color: #84b7cc;
+  }
+
+</style>
+</head>
+<body>
+<script type="text/javascript">
+  var firstname = '{{fname}}'
+  var lastname = '{{lname}}'
+  var username = '{{uname}}'
+  var studentid = '{{pwd}}'
+
+  // console.log(username);
+
+  // p = document.createElement("p");
+  // p.innerHTML = "Your name is "+username+" characters long.";
+  // document.body.appendChild(p);
+
+</script>
+<h1>Welcome {{uname}}</h1>
+<!-- <h1>{{fname}}</h1>
+<h1>{{lname}}</h1>
+<h1>{{pwd}}</h1> -->
+<h2> Python Basic Practice Questions </h2>
+<br>
+<div align = "center">
+  <button class="block" onclick="location.href='/Basic_operations/BO_index'">Basic Operations</button>
+  <br>
+  <br>
+  <button class="block" onclick="location.href='String_operations/SO_index'">String Operations</button>
+  <br>
+  <br>
+  <button class="block" onclick="location.href='List_operations/List_index'">List</button>
+  <br>
+  <br>
+  <button class="block" onclick="location.href='Tup_operations/Tup_index'">Tuples</button>
+  <br>
+  <br>
+  <button class="block" onclick="location.href='Dict_operations/Dict_index'">Dictionary</button>
+  <br>
+  <br>
+  <button class="block" onclick="location.href='DM_operations/DM_index'">Decision  Making</button>
+  <br>
+  <br>
+  <button class="block" onclick="location.href='loops/loops_index'">Loops</button>
+  <br>
+  <br>
+  <button class="block" onclick="location.href='func_operations/func_index'">Functions</button>
+  <br>
+  <br>
+  <button class="block" onclick="location.href='Sets_operations/sets_index'">Sets</button>
+  <br>
+  <br>
+  <button class="block" onclick="location.href='lambda_operations/lambda_index'">Lambda</button>
+  <br>
+  <br>
+  <button class="block" onclick="location.href='arrays_operations/arrays_index'">Arrays</button>
+  <br>
+  <br>
+  <button class="block" onclick="location.href='Classes_and_Objects/classes_index'">Classes and Objects</button>
+</div>
+</body>
+</html>
